@@ -5,6 +5,7 @@ jobs:
       sudo: false
       install: skip
       script:
+        - xcodebuild -version
         - xcrun instruments -s devices
         - echo staring build and test...
         - xcrun simctl list devices
